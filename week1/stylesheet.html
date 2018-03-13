@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>P01: Style Guide</title>
+
+        <link href="css/main.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <h1>Style Guide Template</h1>
+
+        <p>A template you can use to start building out your own style guides with.</p>
+        <nav>
+            <p>
+                Go to:
+                <a class="btn-form" href="#interactive_elements">Interactive Elements</a>
+                <a class="btn-form" href="#text_elements">Text Elements</a>
+                <a class="btn-form" href="#combined_elements">Combined Elements</a>
+            </p>
+            <p>
+                Other Pages:
+                <a class="btn-form" href="wireframes/start.html">User Flow Wireframes</a>
+                <a class="btn-form" href="citations.html">Citations</a>
+            </p>
+        </nav>
+
+        <!-- INTERACTIVE ELEMENTS SECTION // -->
+        <section id="interactive_elements">
+
+            <!-- Default Button styling section -->
+            <section>
+
+                <h2>Navigation Button</h2>
+
+                <h3>CSS selector:</h3>
+                <p>.btn-nav</p>
+
+                <h3>Sample code:</h3>
+                <code>&lt;a href="#" class="btn-nav"&gt;Default Button&lt;/a&gt;</code>
+
+                <h3>Rendered element:</h3>
+                <a class="btn-nav" href="#">Default Button</a>
+
+            </section>
+
+            <section>
+                <h2>In-text link</h2>
+
+                <h3>CSS selector:</h3>
+                <p>.link-text</p>
+
+                <h3>Sample code:</h3>
+                <code>&lt;a href="#" class="link-text"&gt;In-text link&lt;/a&gt;</code>
+
+                <h3>Rendered element:</h3>
+                <a class="link-text" href="#">In-text link</a>
+
+            </section>      
+
+            <section>
+                <h2>Submit/Reset Buttons</h2>
+
+                <h3>CSS selector:</h3>
+                <p>.btn-form</p>
+
+                <h3>Sample code:</h3>
+                <code>&lt;a href="#" class="btn-form"&gt;Submit/Reset&lt;/a&gt;</code>
+
+                <h3>Rendered element:</h3>
+                <a class="btn-form" href="#">Submit</a>
+                <a class="btn-form" href="#">Reset</a>
+            </section>      
+
+            <section>
+                <h2>Text Input Field</h2>
+
+                <h3>CSS selector:</h3>
+                <p>.input-text</p>
+
+                <h3>Sample code:</h3>
+                <code>&lt;label for="test"&gt;Value&lt;/label&gt;<br>
+                    &lt;input type="text" class="input-text" id="test"&gt;</code>
+
+                <h3>Rendered element:</h3>
+                <label for="test">Value</label>
+                <input type="text" class="input-text" id="test">
+            </section>      
+
+        </section>
+        <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+        <!-- TEXT ELEMENTS SECTION // -->
+        <section id="text_elements">
+
+            <section>
+                <h2>Headings</h2>
+
+                <h3>CSS selector:</h3>
+                <p>h1.head1, h2.head2, h3.head3</p>
+
+                <h3>Sample code:</h3>
+                <code>&lt;h1 class="head1"&gt;Header 1&lt;/h1&gt;<br>
+                    &lt;h2 class="head2"&gt;Header 2&lt;/h2&gt;<br>
+                    &lt;h3 class="head3"&gt;Header 3&lt;/h3&gt;<br></code>
+
+                <h3>Rendered element:</h3>
+                <h1 class="head1">Header 1</h1>
+                <h2 class="head2">Header 2</h2>
+                <h3 class="head3">Header 3</h3>
+
+            </section>     
+
+            <section>
+                <h2>Paragraphs</h2>
+
+                <h3>CSS selector:</h3>
+                <p>.p-text</p>
+
+                <h3>Sample code:</h3>
+                <code>&lt;p class="p-text"&gt;Lorem ipsum ..&lt;/p&gt;</code>
+
+                <h3>Rendered element:</h3>
+                <p class="p-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Nulla tempus elit lectus, at lobortis mi pharetra quis. 
+                    Nam at eros sit amet felis rhoncus dignissim eu eu lacus. 
+                    Sed erat sapien, molestie sed volutpat ut, pellentesque ut ex. 
+                    Quisque varius, neque id viverra fermentum, ipsum diam aliquam enim, non 
+                    venenatis velit sem eu purus. Cras ut turpis lorem. Nulla vitae auctor justo. 
+                    Nunc sit amet varius arcu. Vivamus in justo sit amet nunc consectetur efficitur. 
+                    Donec dignissim sapien ac mauris dapibus accumsan. Integer neque ante, dictum non 
+                    mauris ut, vehicula convallis lorem. Duis nec imperdiet neque. Vivamus eu turpis 
+                    commodo, hendrerit mi id, consectetur leo. Maecenas odio arcu, euismod fermentum 
+                    euismod congue, aliquet dictum metus. </p>
+
+            </section> 
+
+            <section>
+                <h2>Bulleted Lists</h2>
+
+                <h3>CSS selector:</h3>
+                <p>.b-list</p>
+
+                <h3>Sample code:</h3>
+                <code>&lt;ul class="b-list"&gt;<br>
+                    &lt;li&gt;Item 1&lt;/li&gt;<br>
+                    &lt;li&gt;Item 2&lt;/li&gt;<br>
+                    &lt;li&gt;Item 3&lt;/li&gt;<br>
+                    &lt;/ul&gt;</code>
+
+                <h3>Rendered element:</h3>
+                <ul class="b-list">
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+
+
+            </section>   
+            <section>
+                <h2>Numbered Lists</h2>
+
+                <h3>CSS selector:</h3>
+                <p>.n-list</p>
+
+                <h3>Sample code:</h3>
+                <code>&lt;ol class="n-list"&gt;<br>
+                    &lt;li&gt;Item 1&lt;/li&gt;<br>
+                    &lt;li&gt;Item 2&lt;/li&gt;<br>
+                    &lt;li&gt;Item 3&lt;/li&gt;<br>
+                    &lt;/ol&gt;</code>
+
+                <h3>Rendered element:</h3>
+                <ol class="n-list">
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ol>
+
+            </section>   
+
+        </section>
+        <!-- // TEXT ELEMENTS SECTION -->
+
+        <!-- COMBINED ELEMENTS SECTION // -->
+        <section id="combined_elements">
+
+            <section>
+                <h2>Main Navigation</h2>
+
+                <h3>CSS selector:</h3>
+                <p>.navbar</p>
+
+                <h3>Sample code:</h3>
+                <code>&lt;div class="navbar"&gt;<br>
+                    &lt;a href="#first"&gt;First&lt;/a&gt;<br>
+                    &lt;a href="#second"&gt;Second&lt;/a&gt;<br>
+                    &lt;a href="#third"&gt;Third&lt;/a&gt;<br>
+                    &lt;/div&gt;</code>
+
+                <h3>Rendered element:</h3>
+                <div class="navbar">
+                    <a href="#first">First</a>
+                    <a href="#second">Second</a>
+                    <a href="#third">Third</a>
+                </div> 
+
+            </section>  
+
+            <section>
+                <h2>Product Listing</h2>
+
+                <h3>CSS selector:</h3>
+                <p>.container, .img</p>
+
+                <h3>Sample code:</h3>
+                <code>&lt;div class="container"&gt;<br>
+                    &lt;div class="img"&gt;<br>
+                    &lt;img src="img/img1.jpg" alt="Enzymes 1"&gt;<br>
+                    &lt;/div&gt;<br>
+                    &lt;/div&gt;</code>
+
+                <h3>Rendered element:</h3>
+                <div class="container">
+                    <div class="product">
+                        <h3 class="head3">Enzymes 1</h3>
+                        <img src="img/img1.jpeg" alt="Enzymes 1">
+                        <h3 class="head3">Price: $X.XX</h3>
+                    </div>
+                    <div class="product">
+                        <h3 class="head3">Enzymes 2</h3>
+                        <img src="img/img2.jpeg" alt="Enzymes 2">
+                        <h3 class="head3">Price: $X.XX</h3>
+                    </div>
+                    <div class="product">
+                        <h3 class="head3">Enzymes 3</h3>
+                        <img src="img/img3.jpeg" alt="Enzymes 3">
+                        <h3 class="head3">Price: $X.XX</h3>
+                    </div>
+                    <div class="product">
+                        <h3 class="head3">Enzymes 4</h3>
+                        <img src="img/img4.jpeg" alt="Enzymes 4">
+                        <h3 class="head3">Price: $X.XX</h3>
+                    </div>
+                </div>
+
+            </section>  
+
+            <section>
+                <!-- Website Grid Structure -->
+                <h2 class="styleguide">Grid Structure</h2>
+
+                <h3>CSS selector:</h3>
+                <p>.grid, .gridh, .gridt, .gridq</p>
+
+                <h3>Sample code:</h3>
+                <code>&lt;div class="grid"&gt;<br>
+                    &lt;div class="gridh"&gt;gridh 1&lt;/div&gt;<br>
+                    &lt;div class="gridh"&gt;gridh 2&lt;/div&gt;<br>
+                    &lt;/div&gt;</code>
+
+                <h3>Rendered element:</h3>
+                <div class="grid">
+
+                    <div class="gridh">gridh 1</div>
+                    <div class="gridh">gridh 2</div>
+                </div>
+
+                <div class="grid">
+                    <div class="gridt">gridt 1</div>
+                    <div class="gridt">gridt 2</div>
+                    <div class="gridt">gridt 3</div>
+                </div>
+
+                <div class="grid">
+                    <div class="gridq">gridq 1</div>
+                    <div class="gridq">gridq 2</div>
+                    <div class="gridq">gridq 3</div>
+                    <div class="gridq">gridq 4</div>
+                </div>
+
+            </section>
+
+            <!-- Website colour swatches -->
+            <section>
+
+                <h2 class="styleguide">Colour Swatches</h2>
+
+                <h3>CSS selector:</h3>
+                <p>.color_1, .color_2, .color_3, </p>
+
+                <h3>Sample code:</h3>
+                <code>&lt;p class="color_1"&gt;C50017&lt;/p&gt;</code>
+
+                <h3>Rendered element:</h3>
+                <p class="color_1">C50017</p>
+                <p class="color_2">8E0017</p>
+                <p class="color_3">150761</p>
+
+            </section>
+        </section>
+        <!-- // COMBINED ELEMENTS SECTION -->
+
+
+    </body>
+</html>
