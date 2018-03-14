@@ -3,7 +3,7 @@ body {
   padding: 0;
   font-size: 1rem;
   font-family: 'Verdana', sans-serif;
-  color: #4D25B5;
+  color: #450005;
   background-color: #FFBB79;
 }
 
@@ -15,12 +15,17 @@ nav ul {
 
 nav li {
   display: inline-block;
+  background-color: #FF4F1E;
 }
 
 nav a {
-  display: block;
-  padding: 6px 12px;
+  display: inline-block;
+  padding: 1em 4em;
+  text-align: center;
   text-decoration: none;
+  border-bottom: 0.2em solid #450005;
+  width: 15%;
+  color: white;
 }
 
 .box {

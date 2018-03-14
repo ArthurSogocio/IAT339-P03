@@ -2,18 +2,18 @@ $orange: #FF4F1E;
 $offorange: #FFBB79;
 $white: #FFFFFF;
 $purple: #4D25B5;
+$offblack: #450005;
 
 html{
   
 }
-
 
 body{
   margin: 0;
   padding: 0;
   font-size: 1rem;
   font-family: 'Verdana', sans-serif;
-  color: $purple;
+  color: $offblack;
   background-color: $offorange;
 }
 
@@ -24,12 +24,19 @@ nav {
         list-style: none;
     }
 
-    li { display: inline-block; }
+    li { 
+        display: inline-block;
+        background-color: $orange;
+    }
 
     a {
-        display: block;
-        padding: 6px 12px;
+        display: inline-block;
+        padding: 1em 4em;
+        text-align: center;
         text-decoration: none;
+        border-bottom: 0.2em solid $offblack;
+        width: 15%;
+        color: white;
     }
 }
 
