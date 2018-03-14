@@ -1,50 +1,66 @@
 $orange: #FF4F1E;
-$offorange: #FFBB79;
+$offorange: #FFE2D9;
 $white: #FFFFFF;
 $purple: #4D25B5;
 $offblack: #450005;
 
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+
 html{
-  
+
 }
 
 body{
-  margin: 0;
-  padding: 0;
-  font-size: 1rem;
-  font-family: 'Verdana', sans-serif;
-  color: $offblack;
-  background-color: $offorange;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-family: 'Verdana', sans-serif;
+    color: $offblack;
+    background-color: $offorange;
 }
 
 nav {
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: $orange;
+
     ul {
         margin: 0;
         padding: 0;
         list-style: none;
-    }
-
-    li { 
-        display: inline-block;
         background-color: $orange;
+        border-bottom: 0.2em solid $offblack;
+        width: 100%;
     }
 
     a {
-        display: inline-block;
         padding: 1em 4em;
-        text-align: center;
+        display: inline-block;
         text-decoration: none;
-        border-bottom: 0.2em solid $offblack;
-        width: 15%;
         color: white;
+    }
+
+    a:visited {
+        color: $offorange;
     }
 }
 
 @mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-     -moz-border-radius: $radius;
-      -ms-border-radius: $radius;
-          border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
 }
 
 .box { @include border-radius(10px); }
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
